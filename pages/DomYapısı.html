@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../css/objectModel.css">
+     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Gotu">
+     <title>WEB TASARIM</title>
+</head>
+
+<body>
+    <header>
+       <ul class="menu">
+        <li class="had"><a href="#hadise" class="had" >JavaScript</a></li>
+        <li><a href="../index.html">ANASAYFA</a></li>
+        <li><a href="JSAnlatım.html">JAVASCRIPT</a></li>
+        <li><a href="objectmodel.html">JS DİNAMİK İŞLEMLER</a></li>
+              
+    </ul>
+      
+    </div>
+    </div>
+    <ul class="medya">
+        <li><a href="https://www.instagram.com/brfncinar/"><i class="fab fa-instagram fa-2x"></i> Instagram</span></a></li>
+        <li><a href="https://twitter.com/brfncinar"> <i class="fab fa-twitter-square fa-2x"></i> Twitter</a></li>
+    </ul>
+    
+    <ul class="ornekler">
+  <li><a  href="jsfonksiyon.html">JavaScript Fonksiyon Kullanımı</a></li>
+ <li><a  href="DomYapısı.html">JavaScript DOM Yapısı</a></li>
+  <li><a  href="jsnesne.html">JavaScript NESNE Yapısı</a></li>
+  </ul>
+
+<div id="Ornek1">
+  <p><h2>HTML DOM(Document Object Model)</h2>
+Tarayıcı bir Web sayfasını yüklendiğinde DOM nesnesini de oluşturur. Yüklenen DOM, belge için bir dizi düğüm ve nesne sunmaktadır. Düğümler ile ayrıca olaylar ve tetikleyiciler eklenebilir.Özetle programlama dilini WEB sayfasına bağlamak için kullanılır.
+<br>
+DOM modeli nesneleri aşağıdaki gibi ağaç yapısında oluşturmaktadır.
+<br>
+JavaScript, Nesne Modelini kullanarak  HTML belgesini düzenlemek için gerekli tüm yetkilere sahiptir. Aşağıdaki gibi belge üzerinde tüm işlemleri gerçekleştirebiliriz.</p>
+<br>
+<p>JavaScript sayfadaki tüm HTML öğrelerini değiştirebilir.</p>
+<br>1.JavaScript sayfadaki tüm HTML niteliklerini değiştirebilir.
+<br>2.JavaScript sayfadaki tüm CSS stillerini değiştirebilir.
+<br>3.JavaScript mevcut HTML belgesindeki nitelikleri kaldırabilir.
+<br>4.JavaScript yeni HTML öğeleri ve nitelikleri ekleyebilir.
+<br>5.JavaScript sayfadaki tüm HTML olaylarına tepki gösterebilir.
+<br>6.JavaScript yeni HTML olayları oluşturabilir.
+<br><p>Bu yazıda şunları öğreneceksiniz.</p>
+<br>
+<br>1.HTML etiketlerinin içeriğini değiştirmeyi
+<br>2.HTML etiketlerinin stilini değiştirmeyi
+<br>3.DOM olaylarına nasıl tepki verileceğini
+<br>4.HTML etiket oluşturmayı ve silmeyi
+<br><p><img src="../assets\Rimh38.jpg"></p>
+<h2>HTML DOM Nedir?</h2>
+Yukarıda belirttiğim gibi HTML DOM standart bir nesne ve programlama ara yüzüdür.
+<br>
+<p>Nesne olarak HTML etiketi şunlara sahiptir.</p>
+<br>
+<br>HTML etiketleri birer nesnedir.
+<br>HTML etiketlerinin özellikleri
+<br>HTML etiketlerine erişim metodları
+<br>Tüm HTML etiketlerinin olayları 
+<p>HTML DOM metodları ile elementler üzerinde işlem yapabilirsiniz.</p>
+
+HTML DOM özellikleri ile elementlerin değerlerini okuyabilir ve değiştirebilirsiniz.
+
+<p><h2>DOM Programlama Arayüzü</h2></p>
+<br>JavaScript ile Tüm HTML DOM ağacına ulaşabilirsiniz.
+<br>DOM içinde tüm HTML etiketleri birer nesne (object) olarak oluşturulmuştur.
+<br>Programlama arayüzü her etiket için metot(method) ve özellikler(property) sunar.
+<br>Özellik( Property) etiket değeri üzerinde okuma ve değiştirme yapma imkanı sunar.(İçeriği değiştirme gibi)
+<br>Methot (Method) etiket üzerinde eylemler gerçekleştirme imkanı sunar.(Yeni etiketler ekleme gibi)
+<p>Aşağıdaki örnekte id değeri test olan bir etiketin içesindeki yazıyı değiştirme işlemi gerçekleştirilmiştir.<br>Örnekte getElementById metodu, innerHTML özelliği göstermektedir.</p>
+<p><img src="../assets\Rimh39.jpg"></p>
+<p><img style="width: 500px" src="../assets\Rimh40.jpg"></p>
+<p><h2>HTML DOM document Nesnesi</h2>
+document nesnesi web sayfasını temsil eder.
+
+<br>Sayfa içindeki her hangi bir elemente ulaşmak için document nesnesi ile başlamak zorundasınız.HTML etiketleri üzerinde düzenleme yapmak için kullanılan bazı document metotları aşağıda gösterilmiştir.
+
+<br><h2>HTML Etiketlerini Seçme</h2>
+<br>->document.getElementById(id): id niteliği ile eşleşen ilk kaydı getirir.
+<br>->document.getElementsByName(name): name niteliği ile eşleşen tüm kayıtları dizi olarak  getirir.
+<br>->document.getElementsByTagName(etiketadı):etiket adı ile eşleşen tüm kayıtları dizi olarak getirir.
+<br>->document.getElementsByClassName(classAdı):class niteliği ile eşleşen tüm kayıtları dizi olarak getirir.
+<br>->document.querySelector(seçici): seçici ile eşleşen ilk kaydı getirir.
+<br>->document.querySelectorAll(seçici): seçici ile eşleşen tüm kayıtları dizi olarak getir.
+<br>Aşağıdaki  document özellikleri ile de HTML nesnelerine liste olarak erişebilirsiniz. HTML belgesindeki nesneleri dizi listesi olarak çeker.
+
+<p>Not: body, head, documentElement, title tek bir nesneyi döndürür. Diğerleri nesnelerden oluşan bir dizi döndürür.</p>
+
+<br>->document.anchors  ⇨ Sayfadaki tüm bağlantıları erişmek için kullanılır.
+<br>->document.body  ⇨Body nesnesine ulaşmak için kullanılır
+<br>->document.documentElement ⇨HTML kökünden itibaren tüm dökümana ulaşmak için kullanılır.
+<br>->document.embeds ⇨ eklentilere ulaşmak için kullanılır.
+<br>->document.forms ⇨ Sayfadaki formlara ulaşmak için kullanılır.
+<br>->document.head ⇨ head etiketine ulaşmak için kullanılır.
+<br>->document.images ⇨Sayfadaki resimlere ulaşmak için
+<br>->document.links ⇨ Sayfadaki linklere ulaşmak için kullanılır.(a href olan nesneler)
+<br>->document.scripts ⇨ Sayfada yüklenen Script dosyalarına ulaşmak için kullanılır.
+<br>->document.title ⇨ Sayfa başlığına ulaşmak için kullanılır.</p>
+<p><h2>HTML Etiketlerini Düzenleme</h2>
+<br>->etiket.innerHTML: Etiketin içini okuma ve değiştirme için kullanılır.
+<br>->etiket.attribute: Etiketin niteliğini değiştirmek için kullanılır.
+<br>->etiket.setAttribute(nitelik, değeri): Etiketin niteliğini değiştirmek için kullanılır.
+<br>->etiket.style.property:  Etiketin stilini değiştirmek için kullanılır.
+<br>->etiket.classList: etiketlerin class niteliği üzerinde silme,değiştirme, ekleme, class listesini öğrenme gibi işlemleri yapmak için kullanılır.</p>
+<p><h2>HTML Etiketi Ekleme ve Silme</h2>
+<br>->document.createElement(element) :HTML etiketi oluşturma
+<br>->document.removeChild(element): HTML etiketi silme
+<br>->document.appendChild(element): HTML etiketi ekleme
+<br>->document.replaceChild(element): HTML etiketini değiştirme</p>
+<p><h2>HTML Etiketine Olay Ekleme</h2>
+<br>HTML etiketine olay eklemek için iki yöntem mevcut.
+
+<br>1.Yöntem: HTML etiketlerine addEventListener metotu ile olay eklemesi yapılabilir.
+
+<br>2.Yöntem: HTML etiketine olay özelliği ile olay eklemesi yapılabilir.</p>
+<h3>Dom Yapısı ile İlgili Örnekler İçin Resme Tıkla... </h3>
+
+<a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_method">
+
+<img border="0" src="../assets/Rimh41.jpg" weight="150" height="150"></a>
+
+<a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_getelementbyid">
+
+<img border="0" src="../assets/Rimh41.jpg" weight="150" height="150"></a>
+
+<a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_date">
+
+<img border="0" src="../assets/Rimh41.jpg" weight="150" height="150"></a>
+<a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_style">
+
+<img border="0" src="../assets/Rimh41.jpg" weight="150" height="150"></a>
+
+<a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_event_onclick2">
+
+<img border="0" src="../assets/Rimh41.jpg" weight="150" height="150"></a>
+</div>
+
+</header>
+</body>
+</html>

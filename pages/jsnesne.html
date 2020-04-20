@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../css/objectModel.css">
+     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Gotu">
+     <title>WEB TASARIM</title>
+</head>
+
+<body>
+    <header>
+       <ul class="menu">
+        <li class="had"><a href="#hadise" class="had" >JavaScript</a></li>
+        <li><a href="../index.html">ANASAYFA</a></li>
+        <li><a href="JSAnlatım.html">JAVASCRIPT</a></li>
+        <li><a href="objectmodel.html">JS DİNAMİK İŞLEMLER</a></li>
+              
+    </ul>
+      
+    </div>
+    </div>
+    <ul class="medya">
+        <li><a href="https://www.instagram.com/brfncinar/"><i class="fab fa-instagram fa-2x"></i> Instagram</span></a></li>
+        <li><a href="https://twitter.com/brfncinar"> <i class="fab fa-twitter-square fa-2x"></i> Twitter</a></li>
+    </ul>
+    
+    <ul class="ornekler">
+  <li><a  href="js7.html">JavaScript Fonksiyon Kullanımı</a></li>
+ <li><a  href="DomYapısı.html">JavaScript HTML DOM Nesneleri</a></li>
+ <li><a  href="jsnesne.html">JavaScript NESNE Yapısı</a></li>
+  </ul>
+
+<div id="Ornek1">
+ <p><h2>Javascript Nesne Oluşturulması</h2></p> 
+ <p>Javascript, standart olarak Object adında bir nesne sunar. Oluşturulan nesneler de Object türündedir. Örneğin bir nesnenin oluşturulmasını şu şekilde yapabiliriz.</p>
+ <br><img src="../assets\Rimh42.jpg">
+  <p>Bu şekilde herhangi bir üyesi bulunmayan ve sadece “Object” tipine ait üyeleri barındıran bir bankAccount nesnesi oluşturmuş olduk.
+  Bu nesneyi daha basit bir şekilde aşağıdaki gibi tanımlayabiliriz.</p>
+<br><img src="../assets\Rimh43.jpg">
+<p>Yani Object anahtar kelimesini kullanmadan da tanımlama yapmak mümkündür.</p>
+<p><h2>Nesnelere Property eklenmesi</h2></p>
+<p>Oluşturduğumuz nesnelere property eklenmesi işlemini aşağıdaki şeklide gerçekleştirebiliriz.</p>
+<br><img src="../assets\Rimh44.jpg">
+<p>nesnelere bir değer veya fonksiyonu property olarak belirleyebiliriz. Bir property eğer bir fonksiyonu işaret ediyorsa ona metod diyebiliriz.</p>
+<br><img src="../assets\Rimh45.jpg">
+<p>Yukarıda tanımladığımız bankAccount nesnesine ait “details” isimli property bir metoddur.Metodlar içerisinde kullanılan this anahtar kelimesi metodun ait olduğu nesneyi ifade eder.
+Bu sebeple yukaridaki “details” metodu içerisinden diğer üyelere this anahtar kelimesi ile ulaşabilmekteyiz. Metod içerisinden this anahtar kelimesini kullanmadan bir üyeye erişmeye çalışırsak hata ile karşılaşırız.</p>
+<p><h2>Nesne Üyelerinin Oluşturma Sırasında Eklenmesi</h2></p>
+<p>Nesneleri oluşturduktan sonra üyelerin belirlenmesi mümkün olduğu gibi, nesne oluşturulurken üyelerinin belirlenmesi de mümkündür. Kodun temiz olması açısından kullanılabilecek bir gösterim olarak değerlendirilebilir.</p>
+<br><img src="../assets\Rimh46.jpg">
+<p><h2>Constructor(kurucu metod) Kullanılması</h2></p>
+<p>Yukarıda tanımladığımız nesne oluşturma şeklini tekrar hatırlayalım. Basit haliyle bir nesnenin oluşturulması şu şekildeydi.</p>
+<br><img src="../assets\Rimh47.jpg">
+<p>Bu nesneye bir constructor eklemek istediğimizde ne yapmamız gereken şudur:</p>
+<br><img src="../assets\Rimh48.jpg">
+<p>Bu fonksiyon “{}” parantezlerden hemen önce belirlenmiştir. Javascript ortamında construstor fonksiyonlar property’leri this isimli nesneye atarlar. Javascript ortamındaki constructor fonksiyonlar C# veya Java’daki sınıflara benzerler. Constructor kullanarak yeni bir nesne oluşturup o nesneye</p>
+<br><img src="../assets\Rimh49.jpg">
+<p>Oluşturduğumuz bu nesneyi şu şeklide kullanabiliriz.</p>
+<br><img src="../assets\Rimh50.jpg">
+<p>Constructor fonksiyonu tanımladıktan sonra nesne örneğinizi oluşturmak için “new” operatörünü kullanabilirsiniz. Oluşturduğunuz bu nesne örneğinin property’lerine ulaşabilirsiniz.</p>
+<p><h2>Nesnelerin Prototiplerinin Kullanılması</h2></p>
+<p>Javascript Object tipinde bulunan prototype adlı özel bir metod, tüm nesnelerde bulunur. Bu metod sayesinde nesnelere yeni property veya metodlar ekleyebilirsiniz. Constructor fonksiyonları ile kendi özel tiplerimizi oluşturmamız mümkündür. Oluşturduğumuz tipe ait iki farklı nesne örneği oluşturacağımız vakit her bir nesne örneği kendi property kümesini bünyesinde barındırır. Bu durum, veri tutucu property’ler için makul görünse de metodlar için bir sorun haline gelebilir. Metodlarımızı oluşturduğumuz tip içerisinden ayırabiliriz.</p>
+<br><img src="../assets\Rimh51.jpg">
+<p>Bu bize ne fayda sağlamıştır? Örnek-1 de constructor içinde tanımlanan fonksiyon için her Rectangle nesnesi oluşturulduğunda bellekte anonim bir fonksiyon oluşturulacak ve yer tutacak. Ancak Örnek-2 de durum farklı olacaktır. Prototype property’ler static olduklarından her Rectangle nesnesi prototype içine tanımlanan metodları referans olarak görecektir.
+<br>Ayrıca Rectange tipine ait değer tutucu (x,y) üyeler ve fonksiyonlar ayrılmış oldu. Bu ayrımı farklı Javascript dosyalarına bile dağıtmak mümkündür.
+<br>Prototype kullanımı öncelikli olarak performans artışı sağlamakla birlikte kodun okunabilirliğini de arttırmak açısından faydalı olmaktadır.</p>
+ </div>
+
+</header>
+</body>
+</html>

@@ -1,0 +1,145 @@
+body{
+    background-color: #DCDCDC;
+    padding: 0;
+    margin: 0;
+}
+header ul.menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color:#A9A9A9;
+    
+}
+header ul.menu li{
+    float: left;
+}
+header ul.menu li a{
+    text-decoration: none;
+    color:  #000000;
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left:10px;
+    font-family: 'Staatliches', cursive;
+}
+header ul.menu li a.had{
+    color:  #696969;
+     padding:0px;
+    margin: 10px;
+    font-size: 60px;
+}
+header ul.menu li.had{
+    margin-right: 15%;
+}
+header ul.metin{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color:#D3D3D3 ;
+    border-bottom: 1px solid black;
+
+
+}
+header ul.metin li a{
+    text-decoration: none;
+    padding: 38%;
+    font-size:80px;
+    color:  #808080;
+    margin: 20px;
+    font-family: 'Orbitron', sans-serif;
+}
+header ul.medya{
+    list-style-type: none;
+    padding: 20px;
+    margin: 0px;
+    overflow: hidden;
+    padding-left:40%;
+    border-bottom: 1px solid black;
+    background-color:#D3D3D3;
+    
+}
+header ul.medya li{
+    float: left;
+}
+header ul.medya li a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding:30px;
+    margin-top: 20px;
+    font-family: 'Righteous', cursive;
+}
+header ul.medya li a {
+ display: inline;
+}
+
+
+header ul.konu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color:#A9A9A9;
+
+    
+}
+header .konu li a:hover{
+    color:white;
+    
+
+}
+header ul.konu li a{
+    text-decoration: none;
+    color:  #000000;
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left:10px;
+    font-family: 'Staatliches', cursive;
+}
+
+header ul.menu li a.had9{
+    color:  #696969;
+    padding:20px;
+    margin: 10px;
+    font-size: 30px;
+}
+table.table{
+margin: auto;
+padding-top: 150px;
+}
+table.table tr{
+width: 100px;
+height: 50px;
+}
+table.table select.konular {
+margin-top: 50px;
+}
+.button {
+background-color: #4CAF50; /* yesil */
+border: none;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+.button1 {background-color: white; /*buton ic renk */ color: black; /*yazi rengi */ border: 2px /* cizgi kalinligi */ solid #4CAF50; /*cizgi rengi */}
+.button2 {background-color: white; /*buton ic renk */ color: black; /*yazi rengi */ border: 2px /* cizgi kalinligi */ solid #008CBA; /*cizgi rengi */}
+.button3 {background-color: white; /*buton ic renk */ color: black; /*yazi rengi */ border: 2px /* cizgi kalinligi */ solid #f44336; /*cizgi rengi */}
+.button4 {background-color: white; /*buton ic renk */ color: black; /*yazi rengi */ border: 2px /* cizgi kalinligi */ solid #e7e7e7; /*cizgi rengi */}
+.button5 {background-color: white; /*buton ic renk */ color: black; /*yazi rengi */ border: 2px /* cizgi kalinligi */ solid #555555; /*cizgi rengi */}
+header table tr td {
+border-bottom:1px solid #E0E0E0;
+    border-right:1px solid #E0E0E0;
+    padding: 10px;
+    color: #474747;
+    font-family: 'Staatliches', cursive;
+    font-size: 50px;
+}

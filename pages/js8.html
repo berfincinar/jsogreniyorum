@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+     <link rel="stylesheet" type="text/css" href="../css/objectModel.css">
+     <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Gotu">
+     <title>WEB TASARIM</title>
+</head>
+
+<body>
+    <header>
+       <ul class="menu">
+        <li class="had"><a href="#hadise" class="had" >JavaScript</a></li>
+        <li><a href="../index.html">ANASAYFA</a></li>
+        <li><a href="JSAnlatım.html">JAVASCRIPT</a></li>
+        <li><a href="objectmodel.html">JS DİNAMİK İŞLEMLER</a></li>
+              
+    </ul>
+      
+    </div>
+    </div>
+    <ul class="medya">
+        <li><a href="https://www.instagram.com/brfncinar/"><i class="fab fa-instagram fa-2x"></i> Instagram</span></a></li>
+        <li><a href="https://twitter.com/brfncinar"> <i class="fab fa-twitter-square fa-2x"></i> Twitter</a></li>
+    </ul>
+    <ul class="ornekler">
+  <li><a  href="js1.html">Js'ye Giriş</a></li>
+
+  <li><a  href="js2.html">Js'nin Yazılım Yapısı</a></li>
+
+  <li><a  href="js3.html">Değişkenler</a></li>
+
+  <li><a href="js4.html">Operatörler</a></li>
+
+  <li><a href="js5.html">Aritmetik</a></li>
+
+  <li><a href="js6.html">Veri Tipleri</a></li>
+  
+  <li><a href="js7.html">Fonksiyon Yapısı</a></li>
+  
+  <li><a href="js8.html">Olaylar</a></li>
+
+  <li><a  href="js9.html">Strigler,Sayılar,Diziler ve Dizi İşlemleri</a></li>
+
+  <li><a  href="js10.html">If Koşul Yapıları</a></li>
+
+  <li><a  href="js11.html">Döngüler</a></li>
+
+  <li><a href="js12.html">Tip Dönüşümleri</a></li>
+
+  <li><a href="js13.html">Çalışma Yapısı</a></li>
+
+  <li><a href="js14.html">Genel Mimarisi</a></li>
+   <li><a href="objectmodel.html">Hafta-2 Ödev</a></li>
+  </ul>
+
+<div id="Ornek1">
+  <h2>Olaylar</h2>
+<p>Olay yöneticileri, olay gerçekleştiğinde hazırladığımız fonsiyonları tetiklememizi sağlar. Kullanımı oldukça basittir. HTML etiketlerine olay yöneticisi eklerken etiketi kapatmadan eventhandler = “ilgili script kodları” eklenir.</p>
+        <p>Bir HTML etiketinin nerede ise tamamına olay yöneticisi uygulayabiliriz.
+          <br>Örneğin < a > etiketine olay yöneticisi eklemek istersek şu şekilde yazarız:</p>
+          <img src="../assets\img49.png">
+          <p><h4>onClick:</h4> HTML etiketlerinin üzerine tek tıklandığında gerçekleşen olaylardır. Mesela WEB sayfasına eklediğimiz bir butona tıklandığında düğmeye tıklandı diye uyarı veren bir script yazalım.</p>
+          <img src="../assets\img50.png">
+          <p>Aynı işlemi birde link yani a HTML etiketi için yapalım.</p>
+          <img src="../assets\img51.png">
+          <p>Olayları HTML etiketi içinde yazarken fonksiyon yerine direkt olarak script kodlarınıda yazabiliriz, örneğin üstteki a HTML etiketi için yaptığım uygulamayı bu sefer fonksiyon kullanmadan direkt olarak olay eventine script kodu olarak yazmak istersem;</p>
+          <img src="../assets\img52.png">
+          <p>Böylelikle linke tıklandığında hem link açılır hem de uyarı mesajı verilir.</p>
+          <p> <h4>onDblClick Olayı :</h4>Html etiketlerinin üstüne çift tıklandığında gerçekleşecek olaylar için kullanılır. On Double Click anlamındadır, üstüne çift tıklama anlamına gelir. Örnek kullanım;</p>
+          <img src="../assets\img53.png">
+          <p>Burada linbke çift tıkladığınızda ilgili mesajı alırsınız.</p>
+          <p><h4>onLoad Olayı: </h4>Bir WEB sayfasındaki herhangi bir nesnenin tamamıyla yüklenme olayını temsil eder. Body, img, frame ve frameset etiketlerinde kullanılabilir. Örnek kullanım;</p>
+          <img src="../assets\img54.png">
+          <p>Sayfanın yüklenme olayını kontrol ettiğimz için onload olayını body etiketi içinde yazdım. Örneğin herhangi bir image yani resim vb yüklenmesini kontrol etmek istese idim img etiketi için de onload olayını kullanabilirdim.</p>
+          <p><h4>onUnLoad Olayı:</h4> Nesnenin kaldırılma durumunun takibinde kullanabiliriz, örneğin body etiketinin içinde kullandığımızda sayfanın kapatılma olayını gözlemlemiş oluruz. Örnek kullanım;</p>
+          <img src="../assets\img55.png">
+          <p><h4>onFocus Olayı:</h4> Bir WEB sayfası üzerinde html elemanı işlem yapılmak üzere seçildiğinde yani o nesneye odaklanıldığında bu olay çalışır. Örneğin bir metin kutusu içerisine yazı yazılmak için seçildiğinde uyarı vermesini sağlayan kodları yazalım:</p>
+          <img src="../assets\img56.png">
+          <p>Önce mesaj fonksiyonumu yazdım, daha sonra sayfamın içinde bir textbox oluşturdum. Bu textboxa yazı yazmak istediğimde artık uyarı vermesini sağlamış oluyorum.</p>
+          <p><h4>onBlur Olayı:</h4>Seçilen html nesnesinin seçilme özelliğini kaybettiğinde çalışan bir olaydır. Seçilmiş eleman seçimden çıkartıldığında çalışır.</p>
+          <p><h4>onMouseOver Olayı:</h4>Html nesnesinin üstüne mouse ile gelme olayını gözleyen olaydır. Örneğin sayfada bulunan textbox üzerine mouse ile gelindiğinde uyarı verdirmek için aşağıdaki gibi kodları yazabilirim.</p>
+          <img src="../assets\img57.png">
+          <p>Bu sefer direkt olarak mouse ile textbox üzerine gelince uyarı verdirdik.</p>
+          <p><h4>onMouseOut Olayı:</h4>Mouse ile herhangi bir html nesnesinin üzerinden ayrıldığımızda çalışan olaydır. Bu seferde textbox üzerinden ayrıldığımızda uyarı verdirelim.</p>
+          <img src="../assets\img58.png">
+          <p><h4>onMouseMove Olayı:</h4>Mouse ile herhangi bir html nesnesinin üzerinde gezindiğimizde çalışan olaydır. Bu seferde textbox üzerinde gezindiğimizde uyarı verdirelim. onMouseOver olayına çok benzer.</p>
+          <img src="../assets\img59.png">
+          <p><h4>onMouseDown Olayı:</h4> Mouse ile HTML nesne üzerine basıldığı anda gerçekleşen olaydır. onClick olayı ile ile farkı onclick olayının bırakılma eylemidir. Örnek kullanım:</p>
+          <img src="../assets\img60.png">
+          <p><h4>onKeyDown Olayı:</h4>Klavyeden tuşa basma olayıdır. Metin kutusu nesnesinde klavyeden tuşa basıldığında olay çalışır. Örnek kullanım:</p>
+          <img src="../assets\img61.png">
+          <p>Event.keyCode basılan tuşun ASCII kodunu okur. Örneğin boşluk (Spacebar) tuşuna bastığımızda keyCode bize 32 değerini verir. String.fromCharCode ile okunan ASCII değeri tuşun ismine çeviriyoruz ve ekrana mesaj oalrak tuşun ismini yazıyoruz.</p>
+          <p><h4>onSelect Olayı:</h4>Metin kutuları içerisindeki yazı seçildiğinde çalışır. Örnek kullanım:</p>
+          <img src="../assets\img62.png">
+          <p><h4>onResize Olayı:</h4>Tarayıcı penceresinin boyutunu değiştirildiğinde çalışır. Body etiketine yazılarak kullanılabilir. Örnek kullanım:</p>
+          <img src="../assets\img63.png">
+
+</div>
+
+</header>
+</body>
+</html>

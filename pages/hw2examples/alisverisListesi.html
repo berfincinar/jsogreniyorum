@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../css/alisveris.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Actor" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+
+    <title>WEB TASARIM</title>
+</head>
+<body>
+<header>
+   <ul class="menu">
+        <li class="had"><a href="#hadise" class="had" >AlışVeriş Sepeti</a></li>
+        <li><a href="../../index.html">ANASAYFA</a></li>
+        <li><a href="../JSAnlatım.html">JAVASCRIPT</a></li>
+        <li><a href="../objectmodel.html">JS DİNAMİK İŞLEMLER</a></li>
+              
+    </ul>
+
+    <ul class="medya">
+        <li><a href="https://www.instagram.com/brfncinar/"><i class="fab fa-instagram fa-2x"></i> Instagram</span></a></li>
+        <li><a href="https://twitter.com/brfncinar"> <i class="fab fa-twitter-square fa-2x"></i> Twitter</a></li>
+        <li><a href="pages/Login.html"><i class="fas fa-sign-in-alt fa-2x"></i>Login</a></li>
+    </ul>
+<table  class="table">
+<tr><td class="urunekle">Ürün Ekle:</td><td><input type="text" id="urun" /></td>
+ <td>
+  <select id="konular" multiple="multiple" style="width: 150px"></select>
+ </td>
+</tr>
+<tr><td><button width="60" height="30" class="button" value="Ekle" onclick="addOpt();" />MALZEME EKLE</td>
+<td><button class="button" value="Kaldır" onclick="removeOpt();" />MALZEME KALDIR</td>
+<td><button class="button" value="Option Sayısı" onclick="optNumber();" />MALZEME SAYISI</td>
+</tr>
+</table>
+<script src="../../js/alisverisListesi.js"></script>
+</header>
+</body>
+</html>
